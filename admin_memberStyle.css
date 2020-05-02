@@ -1,0 +1,100 @@
+/*
+    beberapa value boleh diganti buat nyesuain sama navbar utama
+*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    background-color: #142850;
+    color: #dae1e7;
+}
+
+.navbar {
+    border: 1px solid #dae1e7;
+    margin-bottom: 6rem;
+}
+
+.navbar-item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navbar-logo {
+    font-weight: 700;
+    font-size: 2em;
+    float: left;
+    padding: 2rem 0;
+}
+
+.navbar-item-menu {
+    float: right;
+}
+
+.navbar-item-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-item-menu li {
+    display: inline-block;
+    margin-right: 15px;
+    padding-top: 2.6rem;
+    position: relative;
+}
+
+.navbar-item-menu span {
+    display: inline-block;
+    margin-right: 15px;
+    padding-top: 2.6rem;
+    position: relative;
+}
+
+.tableHeader {
+    background-color: #00909e;
+    color: #dae1e7;
+}
+
+.navbar-item-menu a {
+    color: #dae1e7;
+    text-decoration: none;
+}
+
+.member-list {
+    display: flex;
+    justify-content: center;
+}
+
+.list-title {
+    margin-left: 8%;
+    font-size: larger;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr {
+    background-color: lightgray;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #dae1e7;
+}
