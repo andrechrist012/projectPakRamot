@@ -1,0 +1,40 @@
+body{
+    
+    background-color: #142850;
+    margin: 0px;
+    padding: 0px;
+}
+.contentbody{
+    color:white;
+}
+.bodyx{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px
+}
+.bodyx > img{
+    margin-right: 350px;
+    padding-left: 100px;
+}
+.contentbody > a{
+    text-decoration: none;
+    background-color: teal;
+    margin-left: 120px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contentbody > h1{
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 0px;
+    margin-left: 120px;
+}
+.contentbody > p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 0px;
+    margin-left: 120px;
+}
