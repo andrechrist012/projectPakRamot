@@ -19,6 +19,7 @@ body {
 .navbar-item {
     width: 80%;
     margin: 0 auto;
+    font-size: large;
 }
 
 .navbar::after {
@@ -58,9 +59,9 @@ body {
     position: relative;
 }
 
-.tableHeader {
-    background-color: #00909e;
-    color: #dae1e7;
+.admin {
+    color: #00909e;
+    margin-left: -10px;
 }
 
 .navbar-item-menu a {
@@ -78,9 +79,21 @@ body {
     font-size: larger;
 }
 
-table {
+.menu-selected {
+    border-bottom: 4px solid #00909e;
+    padding-bottom: 0;
+}
+
+.member-data {
     width: 80%;
     border-collapse: collapse;
+    background-color: #00909e;
+    color: #dae1e7;
+}
+
+.table-header {
+    background-color: #00909e;
+    color: #dae1e7;
 }
 
 table,
@@ -96,5 +109,5 @@ tr {
 }
 
 tr:nth-child(even) {
-    background-color: #dae1e7;
+    background-color: white;
 }
