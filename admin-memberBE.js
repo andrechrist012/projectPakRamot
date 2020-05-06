@@ -8,8 +8,16 @@ function addRow() {
     row.insertCell(0).innerHTML = rowCount;
     row.insertCell(1).innerHTML = myName.value;
     row.insertCell(2).innerHTML = "Normal"
-    row.insertCell(3).innerHTML = '<img src="icons/padlock-ban.png" alt="padlock_ban">'
+    row.insertCell(3).innerHTML = '<img src="icons/padlock.png" id="padlock-button" alt="padlock_ban" onmouseover="onHover(this);" onmouseout="onExitHover(this);"/>'
     console.log("Added new value");
+}
+
+function onHover(element) {
+    element.setAttribute('src', 'icons/padlock-ban.png');
+}
+
+function onExitHover(element) {
+    element.setAttribute('src', 'icons/padlock.png');
 }
 
 function onClick() { //untuk padlock

@@ -111,3 +111,7 @@ tr {
 tr:nth-child(even) {
     background-color: white;
 }
+
+#padlock-button:hover {
+    background: image("/icons/padlock-ban.png");
+}
