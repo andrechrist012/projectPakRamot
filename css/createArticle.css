@@ -1,0 +1,159 @@
+/*
+    beberapa value boleh diganti buat nyesuain sama navbar utama
+*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    background-color: #142850;
+    color: #dae1e7;
+}
+
+.menuBar {
+    width: 100%;
+    padding: 1.5em;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    align-items: center;
+    border-bottom: 3px solid #dae1e7;
+    background-color: #142850;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.menuLink {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuLink a {
+    margin: .5em 1.2em;
+    padding: .5em;
+    text-decoration: none;
+    color: #dae1e7;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.menuLink .lambang {
+    display: flex;
+    align-items: center;
+    color: #27496d;
+    font-size: larger;
+}
+
+.menuLink a:hover {
+    border-bottom: 4px solid #00909e;
+    padding-bottom: 0;
+}
+
+#active {
+    border-bottom: 4px solid #00909e;
+    padding-bottom: 0;
+}
+
+.container {
+    padding: 7em 3em;
+}
+
+.user {
+    color: #00909e;
+}
+
+.menuLink #user:hover {
+    cursor: default;
+    border: none;
+}
+
+.article-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.list-title {
+    margin-left: 8%;
+    font-size: larger;
+}
+
+.create_container {
+    display: flex;
+    justify-content: center;
+}
+
+.create_container .new_button {
+    padding: .3em 1em;
+    border: 3px solid #00909e;
+    border-radius: 30px;
+}
+
+.create_container .new_button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #dae1e7;
+    text-decoration: none;
+}
+
+.create_container .new_button img {
+    margin-left: .5em;
+}
+
+.article-data {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #00909e;
+    color: #dae1e7;
+}
+
+.table-header {
+    background-color: #00909e;
+    color: #dae1e7;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr {
+    background-color: lightgray;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.article-list .article-data .tables td .nomor {
+    display: flex;
+    justify-content: center;
+}
+
+.article-list .article-data .tables .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-list .article-data .tables .list a {
+    text-decoration: none;
+}
+
+.article-list .article-data .tables .list img {
+    width: 1.3em;
+    margin-left: .3em;
+    margin-right: .3em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../css/createArticle.css" rel="stylesheet" type="text/css">
+    <title>Admin-Member List</title>
+</head>
+
+<body>
+    <nav class="menuBar">
+        <div class="logo">
+            <h1>Ramot's</h1>
+        </div>
+        <div class="menuLink">
+            <a href="">Home</a>
+            <a href="" id="active">Article</a>
+            <a href="">Member List</a>
+            <a href="../RegisLogin/login.html">Logout</a>
+            <div class="lambang">
+                ||
+            </div>
+            <a href="articleAdmin.html" id="user">Welcome, <span class="user">Admin!</span></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="create_container">
+            <div class="new_button" onmouseover="hoverNewArticle(this)" onmouseout="outHoverNewArticle(this)">
+                <a href="">
+                    <h2>Create New Article</h2>
+                    <img src="../image/plus_article.png" width="30px" height="30px" alt="">
+                </a>
+            </div>
+        </div>
+
+        <span class="list-title">Articles</span>
+
+        <div class="article-list">
+            <table id="myTableData" class="article-data" border="1" cellpadding="2">
+                <tr class="table-header">
+                    <td>&nbsp;</td>
+                    <td>Title</td>
+                    <td>Date Created</td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">1</div>
+                    </td>
+                    <td>Laskar Pelangi</td>
+                    <td>
+                        <div class="list">
+                            09-04-2020
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/edit.png" alt="" class="edit" onmouseover="hoverEdit(this)"
+                                        onmouseout="outHoverEdit(this)">
+                                </a>
+                                <a href="">
+                                    <img src="../image/delete.png" alt="" class="delete" onmouseover="hoverDelete(this)"
+                                        onmouseout="outHoverDelete(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">2</div>
+                    </td>
+                    <td>Kancil</td>
+                    <td>
+                        <div class="list">
+                            17-02-2020
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/edit.png" alt="" class="edit" onmouseover="hoverEdit(this)"
+                                        onmouseout="outHoverEdit(this)">
+                                </a>
+                                <a href="">
+                                    <img src="../image/delete.png" alt="" class="delete" onmouseover="hoverDelete(this)"
+                                        onmouseout="outHoverDelete(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            &nbsp;
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

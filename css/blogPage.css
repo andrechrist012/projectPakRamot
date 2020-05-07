@@ -5,7 +5,7 @@
 }
 
 body {
-    color: whitesmoke;
+    color: #dae1e7;
     background-color: #142850;
 }
 
@@ -44,7 +44,7 @@ body {
 
 #login {
     border-radius: 0.5em;
-    background-color: #dae1e7;;
+    background-color: #dae1e7;
     color: #142850;
     transition: 0.2s;
 }
@@ -96,15 +96,15 @@ body {
     margin: 2em 15em 2em 10em;
 }
 
-.title > h1 {
+.title>h1 {
     font-size: 4em;
 }
 
-.title > p {
+.title>p {
     padding: 2em 0;
 }
 
-.title > a {
+.title>a {
     padding: 0.5em;
     border-radius: 1em;
     text-decoration: none;
@@ -115,9 +115,10 @@ body {
     transition: 0.2s;
 }
 
-.title > a:hover{
+.title>a:hover {
     color: #27496d;
-    background-color: #dae1e7;;
+    background-color: #dae1e7;
+    ;
 }
 
 .landing .box {
@@ -127,7 +128,7 @@ body {
     background-color: #00909e;
 }
 
-.home > img {
+.home>img {
     margin-top: -3.5em;
     margin-right: 8em;
     width: 35%;
@@ -169,7 +170,7 @@ body {
     overflow: hidden;
 }
 
-.slides > div {
+.slides>div {
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -272,7 +273,8 @@ body {
     padding: 0.2em 6em;
     height: auto;
     color: #27496d;
-    background-color: #dae1e7;;
+    background-color: #dae1e7;
+    ;
 }
 
 .footerContent {
