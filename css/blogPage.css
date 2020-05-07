@@ -66,6 +66,18 @@ body {
     border-bottom: none;
 }
 
+.scrollUp {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    transition: transform 0.2s ease-out;
+}    
+
+.scrollDown {    
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+}
+
 .landing {
     position: relative;
     height: 100vh;
@@ -129,7 +141,7 @@ body {
     margin-bottom: 8em;
 }
 
-.articlePage>h1 {
+.articlePage > h1 {
     padding: 1em;
     margin-bottom: 1em;
     display: flex;
@@ -161,8 +173,6 @@ body {
     flex-shrink: 0;
     width: 100%;
     height: auto;
-    transform: scale(1);
-    transition: transform 5s;
     display: flex;
     justify-content: center;
 }
@@ -218,7 +228,6 @@ body {
 }
 
 .buttonSlide {
-    margin-top: -0.4em;
     padding: 0.1em;
     display: flex;
     flex-direction: row;
@@ -227,44 +236,34 @@ body {
 }
 
 .buttonSlide > a {
-    margin: 0 .5em;
-    padding: 0.2em 0.5em;
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid black;
-    color: #000;
-    background-color: whitesmoke;
+    color: #00909e;
+    margin: 0 0.5em;
+    height: auto;
+    font-size: 2em;
     transition: 0.2s;
 }
 
 .buttonSlide > a:hover {
+    color: #dae1e7;
+}
+
+.buttonSlide .current > a {
+    margin: 0 .5em;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #00909e;
+    color: #27496d;
+    background-color: #dae1e7;
+    transition: 0.2s;
+}
+
+.buttonSlide .current > a:hover {
     background-color: #00909e;
     color: #dae1e7;
 }
 
-.buttonSlide > a:active {
-    background-color: black;
-    color: #dae1e7;
-}
-
-.buttonSlide > img {
-    margin: 0 0.5em;
-    height: auto;
-    width: 1.8%;
-}
-
-.buttonSlide > a {
-    margin: 0 .5em;
-    padding: 0.2em 0.5em;
-    text-decoration: none;
-    text-align: center;
-    border: 1px solid black;
-    color: #000;
-    background-color: #dae1e7;;
-    transition: 0.2s;
-}
-
-.buttonSlide > a:hover {
+#curr{
     background-color: #00909e;
     color: #dae1e7;
 }
@@ -285,7 +284,7 @@ body {
     margin-right: 10em;
 }
 
-.footerContent>h1 {
+.footerContent > h1 {
     font-size: 1.8em;
 }
 
@@ -305,7 +304,8 @@ body {
     margin-right: -10em;
 }
 
-.footerContact>a {
+.footerContact > a {
+    padding: 5px;
     text-decoration: none;
     color: #27496d;
 }
