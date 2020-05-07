@@ -18,9 +18,8 @@ body {
     box-sizing: border-box;
     position: fixed;
     align-items: center;
-    border-bottom: 3px solid rgba(252, 255, 255, 0.658);
+    border-bottom: 3px solid #dae1e7;
     background-color: #142850;
-    ;
     z-index: 99;
 }
 
@@ -38,32 +37,32 @@ body {
     margin: .5em 1.2em;
     padding: .5em;
     text-decoration: none;
-    color: whitesmoke;
+    color: #dae1e7;
     font-weight: bold;
     transition: 0.1s;
 }
 
 #login {
     border-radius: 0.5em;
-    background-color: whitesmoke;
-    color: #000;
-    transition: 0.5s;
+    background-color: #dae1e7;;
+    color: #142850;
+    transition: 0.2s;
 }
 
 
 .menuLink a:hover {
-    border-bottom: 4px solid rgb(19, 150, 150);
+    border-bottom: 4px solid #00909e;
     padding-bottom: 0;
 }
 
 #active {
-    border-bottom: 4px solid rgb(19, 150, 150);
+    border-bottom: 4px solid #00909e;
     padding-bottom: 0;
 }
 
 #login:hover {
     background-color: #00909e;
-    color: whitesmoke;
+    color: #dae1e7;
     border-bottom: none;
 }
 
@@ -85,15 +84,15 @@ body {
     margin: 2em 15em 2em 10em;
 }
 
-.title>h1 {
+.title > h1 {
     font-size: 4em;
 }
 
-.title>p {
+.title > p {
     padding: 2em 0;
 }
 
-.title>a {
+.title > a {
     padding: 0.5em;
     border-radius: 1em;
     text-decoration: none;
@@ -101,16 +100,22 @@ body {
     text-align: center;
     color: white;
     background-color: #00909e;
+    transition: 0.2s;
+}
+
+.title > a:hover{
+    color: #27496d;
+    background-color: #dae1e7;;
 }
 
 .landing .box {
-    width: 15%;
+    width: 20%;
     height: 5px;
     border-radius: 0.5em;
-    background-color: turquoise;
+    background-color: #00909e;
 }
 
-.home>img {
+.home > img {
     margin-top: -3.5em;
     margin-right: 8em;
     width: 35%;
@@ -131,7 +136,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: underline;
-    text-decoration-color: rgb(6, 153, 153);
+    text-decoration-color: #00909e;
 }
 
 .aticle {
@@ -152,7 +157,7 @@ body {
     overflow: hidden;
 }
 
-.slides>div {
+.slides > div {
     flex-shrink: 0;
     width: 100%;
     height: auto;
@@ -183,7 +188,7 @@ body {
     border-radius: 5em;
     background-color: #27496d;
     font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
+    color: #dae1e7;
 }
 
 .content .text {
@@ -198,7 +203,7 @@ body {
 
 .content .text .creator {
     padding-top: 4em;
-    color: rgb(40, 126, 117);
+    color: #00909e;
 }
 
 .content .text .time {
@@ -221,7 +226,7 @@ body {
     align-items: center;
 }
 
-.buttonSlide>a {
+.buttonSlide > a {
     margin: 0 .5em;
     padding: 0.2em 0.5em;
     text-decoration: none;
@@ -232,38 +237,43 @@ body {
     transition: 0.2s;
 }
 
-.buttonSlide>a:hover {
-    background-color: teal;
-    color: white;
+.buttonSlide > a:hover {
+    background-color: #00909e;
+    color: #dae1e7;
 }
 
-.buttonSlide>img {
+.buttonSlide > a:active {
+    background-color: black;
+    color: #dae1e7;
+}
+
+.buttonSlide > img {
     margin: 0 0.5em;
     height: auto;
     width: 1.8%;
 }
 
-.buttonSlide>a {
+.buttonSlide > a {
     margin: 0 .5em;
     padding: 0.2em 0.5em;
     text-decoration: none;
     text-align: center;
     border: 1px solid black;
     color: #000;
-    background-color: whitesmoke;
+    background-color: #dae1e7;;
     transition: 0.2s;
 }
 
-.buttonSlide>a:hover {
-    background-color: teal;
-    color: white;
+.buttonSlide > a:hover {
+    background-color: #00909e;
+    color: #dae1e7;
 }
 
 .footerPage {
     padding: 0.2em 6em;
     height: auto;
-    color: rgb(11, 81, 146);
-    background-color: rgb(207, 206, 206);
+    color: #27496d;
+    background-color: #dae1e7;;
 }
 
 .footerContent {
@@ -297,13 +307,13 @@ body {
 
 .footerContact>a {
     text-decoration: none;
-    color: rgb(11, 81, 146);
+    color: #27496d;
 }
 
 .footerLine {
     width: 100%;
     height: 5px;
-    background-color: rgb(26, 148, 136);
+    background-color: #00909e;
 }
 
 .footerPage>h3 {
