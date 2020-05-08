@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="admin_memberStyle.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="admin-memberBE.js"></script>
+    <title>Admin-Member List</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-item">
+            <div class="navbar-logo">Ramot's</div>
+            <div class="navbar-item-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Article</a></li>
+                    <li class="menu-selected"><a href="#">Member List</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <span>||</span>
+                    <span>Welcome, </span><span class="admin">Admin!</span>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-name">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="add" value="Add" onclick="Javascript:addRow()">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <span class="list-title">Member List</span>
+
+    <div class="member-list">
+        <table id="myTableData" class="member-data" border="1" cellpadding="2">
+            <tr class="table-header">
+                <td>&nbsp;</td>
+                <td><b>Name</b></td>
+                <td colspan="2">Status</td>
+            </tr>
+
+        </table>
+        &nbsp;
+    </div>
+
+
+</body>
+
+</html>
