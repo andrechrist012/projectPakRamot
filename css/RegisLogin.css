@@ -112,6 +112,10 @@
     border: 1px solid #00909e;
 }
 
+.register .regis_row .regis_list button:hover {
+    box-shadow: 0px 0px 40px 8px #00919e73;
+}
+
 .register form input[type=radio],
 .register .regis_row .regis_list .genders label {
     cursor: pointer;
