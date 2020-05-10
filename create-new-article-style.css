@@ -7,67 +7,109 @@ body {
     color: #dae1e7;
 }
 
-.navbar {
-    border: 1px solid #dae1e7;
-    margin-bottom: 6rem;
+.menuBar {
+    width: 100%;
+    padding: 1.5em;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    align-items: center;
+    border-bottom: 3px solid #dae1e7;
+    background-color: #142850;
+    z-index: 99;
 }
 
-.navbar-item {
-    width: 80%;
-    margin: 0 auto;
-    font-size: large;
+.logo {
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
-.navbar::after {
-    content: '';
-    display: table;
-    clear: both;
+.menuLink {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar-logo {
-    font-weight: 700;
-    font-size: 2em;
-    float: left;
-    padding: 2rem 0;
-}
-
-.navbar-item-menu {
-    float: right;
-}
-
-.navbar-item-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navbar-item-menu li {
-    display: inline-block;
-    margin-right: 15px;
-    padding-top: 2.6rem;
-    position: relative;
-}
-
-.navbar-item-menu span {
-    display: inline-block;
-    margin-right: 15px;
-    padding-top: 2.6rem;
-    position: relative;
-}
-
-.member-name {
-    color: #00909e;
-    margin-left: -10px;
-}
-
-.navbar-item-menu a {
-    color: #dae1e7;
+.menuLink a {
+    margin: .5em 1.2em;
+    padding: .5em;
     text-decoration: none;
+    color: #dae1e7;
+    font-weight: bold;
+    transition: 0.1s;
 }
 
-.menu-selected {
+.menuLink .lambang {
+    display: flex;
+    align-items: center;
+    color: #27496d;
+    font-size: larger;
+}
+
+.menuLink a:hover {
     border-bottom: 4px solid #00909e;
     padding-bottom: 0;
+}
+
+#active {
+    border-bottom: 4px solid #00909e;
+    padding-bottom: 0;
+}
+
+.container {
+    padding: 7em 3em;
+}
+
+.user {
+    color: #00909e;
+}
+
+.menuLink .dropdown {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menuLink .dropdown .drop {
+    display: flex;
+    align-items: center;
+}
+
+.menuLink .dropdown .drop a {
+    margin: .5em .2em;
+}
+
+.menuLink .dropdown .drop a:hover {
+    border: 0;
+    padding: .5em;
+}
+
+.menuLink .dropdown .profile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 11em;
+    right: 25px;
+    top: 58px;
+    z-index: 1;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menuLink .dropdown .profile a {
+    color: #142850;
+    padding: 1em;
+    margin: 0;
+}
+
+.menuLink .dropdown .profile a:hover {
+    border: 0;
+    color: #00909e;
+}
+
+.article-maker {
+    padding: 7em 1em;
 }
 
 .page-title {
