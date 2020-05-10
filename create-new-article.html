@@ -5,26 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="create-new-article-style.css" rel="stylesheet" type="text/css">
     <title>Create New Article</title>
 </head>
 
 <body>
-    <section class="navbar">
-        <div class="navbar-item">
-            <div class="navbar-logo">Ramot's</div>
-            <div class="navbar-item-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="menu-selected"><a href="#">My Article</a></li>
-                    <li><a href="#">Logout</a></li>
-                    <span>||</span>
-                    <span>Welcome, </span>
-                    <span class="member-name">Member!</span>
-                </ul>
+    <nav class="menuBar">
+        <div class="logo">
+            <h1>Ramot's</h1>
+        </div>
+        <div class="menuLink">
+            <a href="">Home</a>
+            <a href="" id="active">My Articles</a>
+            <div class="lambang">
+                ||
+            </div>
+            <div class="dropdown">
+                <div class="drop" onclick="clickDropDown(this)">
+                    <a href="#" id="user">Welcome, <span class="user">Member!</span></a>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                <div class="profile" id="profile">
+                    <a href="Member/editProfile.html">Edit Profile</a>
+                    <a href="RegisLogin/login.html">Logout</a>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
 
     <section class="article-maker">
         <span class="page-title">Create New Article</span>
@@ -37,13 +45,14 @@
                 <span class="add-picture">
                     <span class="add-picture-button">
                         <input type="button" value="Add picture" id="add-button">
-                        <img src="icons/plus.png" alt="plus-button">  
+                        <img src="icons/plus.png" alt="plus-button">
                     </span>
-                <span class="add-picture-logo"><img src="icons/picture.png" alt="picture-logo"></span>
+                    <span class="add-picture-logo"><img src="icons/picture.png" alt="picture-logo"></span>
                 </span>
 
 
-                <textarea name="content" id="article-content" cols="100" rows="50" placeholder="Input content"></textarea><br><br>
+                <textarea name="content" id="article-content" cols="100" rows="50"
+                    placeholder="Input content"></textarea><br><br>
             </form>
         </div>
     </section>
@@ -66,7 +75,7 @@
         <div class="footerLine"></div>
         <h3>© Copyright All Right reserved</h3>
     </section>
-
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>
