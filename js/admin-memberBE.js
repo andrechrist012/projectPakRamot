@@ -13,11 +13,11 @@ function addRow() {
 }
 
 function onHover(element) {
-    element.setAttribute('src', 'icons/padlock-ban.png');
+    element.setAttribute('src', '../icons/padlock-ban.png');
 }
 
 function onExitHover(element) {
-    element.setAttribute('src', 'icons/padlock.png');
+    element.setAttribute('src', '../icons/padlock.png');
 }
 
 function onClick() { //untuk padlock

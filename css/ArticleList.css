@@ -1,7 +1,3 @@
-/*
-    beberapa value boleh diganti buat nyesuain sama navbar utama
-*/
-
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -126,9 +122,10 @@ body {
     border: none;
 }
 
-.member-list {
+.article-list {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .list-title {
@@ -136,16 +133,30 @@ body {
     font-size: larger;
 }
 
-.menu-selected {
-    border-bottom: 4px solid #00909e;
-    padding-bottom: 0;
+.create_container {
+    display: flex;
+    justify-content: center;
 }
 
-.tableMember{
-    padding-top: 10em;
+.create_container .new_button {
+    padding: .3em 1em;
+    border: 3px solid #00909e;
+    border-radius: 30px;
 }
 
-.member-data {
+.create_container .new_button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #dae1e7;
+    text-decoration: none;
+}
+
+.create_container .new_button img {
+    margin-left: .5em;
+}
+
+.article-data {
     width: 80%;
     border-collapse: collapse;
     background-color: #00909e;
@@ -173,6 +184,24 @@ tr:nth-child(even) {
     background-color: white;
 }
 
-#padlock-button:hover {
-    background: image("../image/padlock-ban.png");
+.article-list .article-data .tables td .nomor {
+    display: flex;
+    justify-content: center;
+}
+
+.article-list .article-data .tables .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-list .article-data .tables .list a {
+    text-decoration: none;
+}
+
+.article-list .article-data .tables .list img {
+    width: 1.3em;
+    margin-left: .3em;
+    margin-right: .3em;
 }

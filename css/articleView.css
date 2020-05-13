@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -6,7 +7,6 @@ body {
     background-color: #142850;
     color: #dae1e7;
 }
-
 .menuBar {
     width: 100%;
     padding: 1.5em;
@@ -90,6 +90,7 @@ body {
     flex-direction: column;
     position: absolute;
     background-color: whitesmoke;
+    border-radius: 1em;
     min-width: 11em;
     right: 25px;
     top: 58px;
@@ -108,100 +109,81 @@ body {
     color: #00909e;
 }
 
-.article-maker {
-    padding: 7em 1em;
+.scrollUp {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    transition: transform 0.2s ease-out;
+}    
+
+.scrollDown {    
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
 }
 
-.page-title {
+#login:hover {
+    background-color: #00909e;
+    color: #dae1e7;
+    border-bottom: none;
+}
+
+.scrollUp {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    transition: transform 0.2s ease-out;
+}    
+
+.scrollDown {    
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+}
+
+.backIcon{
+    padding-top: 5em;
+}
+
+.backIcon > a{
+    font-size: 2.5em;
+    padding-left: .8em;
+    padding-bottom: -5em;
+    color: #dae1e7;
+}
+
+.coba2{
+    padding: 1em 6em;
+}
+
+.ArticleKonten{
+    background-color: #dae1e7;
+    color: black;
+    border-radius: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    position: relative;
-    background-color: rgb(207, 206, 206);
-    color: #142850;
-    border: 1px solid rgb(26, 148, 136);
-    border-radius: 1rem;
-    padding: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    flex-direction: column;
+    margin: 4em 1em;
+    margin-top: 1em;
+    padding: 1em 2em 5em 2em;
+}
+.ArticleKonten .pembuat{
+    color: #00909e;
+}
+.ArticleKonten>h1{
+    text-align: center;
+    font-size: 3.5em;
+}
+.ArticleKonten>img{
+    height: auto;
+    width: 40%;
     margin: auto;
-    margin-bottom: -3rem;
-    font-weight: 700;
-    font-size: 2em;
 }
-
-.article-workspace {
-    background-color: rgb(207, 206, 206);
-    border: 1px solid rgb(26, 148, 136);
-    border-radius: 3rem;
-    width: 80%;
-    padding: 20px;
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 6rem;
+.ArticleKonten .tulisan{
+    padding:0em 100px;
 }
-
-input[type=text],
-textarea,
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    font-size: large;
-}
-
-#article-title {
-    font-size: 30pt;
-}
-
-.add-picture {
-    display: flex;
-    float: right;
-    position: relative;
-    margin: 30px 50px;
-    margin-bottom: -8rem;
-}
-
-.add-picture-button {
-    background-color: white;
-    border: 2px solid #142850;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 1rem;
-}
-
-#add-button {
-    border: none;
-    background: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    color: #142850;
-}
-
-.add-picture-button img {
-    height: 25px;
-    width: auto;
-}
-
-#article-content {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 7rem;
-}
-
 .footerPage {
     padding: 0.2em 6em;
     height: auto;
-    color: rgb(11, 81, 146);
-    background-color: rgb(207, 206, 206);
+    color: #27496d;
+    background-color: #dae1e7;
 }
 
 .footerContent {
@@ -213,7 +195,7 @@ select {
     margin-right: 10em;
 }
 
-.footerContent>h1 {
+.footerContent > h1 {
     font-size: 1.8em;
 }
 
@@ -233,15 +215,16 @@ select {
     margin-right: -10em;
 }
 
-.footerContact>a {
+.footerContact > a {
+    padding: 5px;
     text-decoration: none;
-    color: rgb(11, 81, 146);
+    color: #27496d;
 }
 
 .footerLine {
     width: 100%;
     height: 5px;
-    background-color: rgb(26, 148, 136);
+    background-color: #00909e;
 }
 
 .footerPage>h3 {

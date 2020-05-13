@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="../css/artikel.css" rel="stylesheet" type="text/css">
-    <title>New Article</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article_Blog</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/articleView.css">
 </head>
 <body>
-        <nav class="menuBar">
-            <div class="logo">
-                <h1>Ramot's</h1>
-            </div>
-            <div class="menuLink">
-                <a href="">Home</a>
-                <a href="" id="active">My Articles</a>
-                <a href="../RegisLogin/login.html">Logout</a>
-                <div class="lambang">
-                    ||
-                </div>
-                <a href="articleMember.html" id="user">Welcome, <span class="user">Member!</span></a>
-            </div>
-        </nav>
+    <nav class="menuBar" id="navbarScroll">
+        <div class="logo">
+            <h1>Ramot's</h1>
+        </div>
+        <div class="menuLink">
+            <a href="#home">Home</a>
+            <a href="#article" id="active">Article</a>
+            <a href="#contact">Contact</a>
+            <a href="RegisLogin/login.html" id="login">Login</a>
+        </div>
+    </nav>
+    <div class="backIcon">
+        <a href="blogPage.html"><i class="fas fa-arrow-left"></i></a>
+    </div>
     <div class="coba2">
         <div class="ArticleKonten">
             <h1>Top 10 Programming Languange in 2020</h1>
@@ -32,7 +32,7 @@
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis massa orci, eu finibus ipsum sagittis eu. Nam nibh tellus, ullamcorper sed risus a, molestie scelerisque nisi. 
             Integer porta felis metus, ut imperdiet tellus facilisis quis.</p>
-            <img src="../image/Untitled-1.png"  alt="image">
+            <img src="image/1.jpg"  alt="image">
             <div class="tulisan">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -75,6 +75,7 @@
         </div>
         <div class="footerLine"></div>
         <h3>© Copyright All Right reserved</h3>
+    <script src="js/navbar.js"></script>
     </section>
 </body>
 </html>
