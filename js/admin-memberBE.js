@@ -1,26 +1,23 @@
-function addRow() {
-    var myName = document.getElementById("name");
-    var table = document.getElementById("myTableData");
-
-    var rowCount = table.rows.length;
-    var row = table.insertRow(rowCount);
-
-    row.insertCell(0).innerHTML = rowCount;
-    row.insertCell(1).innerHTML = myName.value;
-    row.insertCell(2).innerHTML = "Normal";
-    row.insertCell(3).innerHTML = '<img src="icons/padlock.png" id="padlock-button" alt="padlock_ban" onmouseover="onHover(this);" onmouseout="onExitHover(this);"/>'
-    console.log("Added new value");
+function hoverNewArticle(e) {
+    e.style.backgroundColor = "#00909e";
 }
 
-function onHover(element) {
-    element.setAttribute('src', '../icons/padlock-ban.png');
+function outHoverNewArticle(e) {
+    e.style.backgroundColor = "#142850";
 }
 
-function onExitHover(element) {
-    element.setAttribute('src', '../icons/padlock.png');
+function hoverBan(e) {
+    e.setAttribute('src', '../image/padlock-ban.png');
 }
 
-function onClick() { //untuk padlock
-    //pas click, ubah dari ban jadi unba, dan vice versa
-    //ubah status dari normal ke banned, dan vice versa
+function outHoverBan(e) {
+    e.setAttribute('src', '../image/padlock-unban.png');
+}
+
+function hoverUnban(e) {
+    e.setAttribute('src', '../image/padlock-unban.png');
+}
+
+function outHoverUnban(e) {
+    e.setAttribute('src', '../image/padlock-ban.png');
 }

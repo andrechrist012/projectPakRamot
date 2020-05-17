@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="../css/admin_memberStyle.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../js/admin-memberBE.js"></script>
     <title>Admin-Member List</title>
 </head>
 
@@ -17,7 +16,7 @@
         </div>
         <div class="menuLink">
             <a href="viewArticleAdmin.html">Home</a>
-            <a href="../Admin/articleAdmin.html" >Article</a>
+            <a href="../Admin/articleAdmin.html">Article</a>
             <a href="../Admin/admin_memberList.html" id="active">Member List</a>
             <a href="../blogPage.html">Logout</a>
             <div class="lambang">
@@ -26,25 +25,8 @@
             <a href="articleAdmin.html" id="user">Welcome, <span class="user">Admin!</span></a>
         </div>
     </nav>
-    <div class="tableMember">
-        <div class="add-name">
-            <table>
-                <tr>
-                    <td>Name:</td>
-                    <td><input type="text" id="name"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" id="add" value="Add" onclick="Javascript:addRow()">
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
 
+    <div class="container">
 
         <span class="list-title">Member List</span>
 
@@ -52,17 +34,87 @@
             <table id="myTableData" class="member-data" border="1" cellpadding="2">
                 <tr class="table-header">
                     <td>&nbsp;</td>
-                    <td><b>Name</b></td>
-                    <td colspan="2">Status</td>
+                    <td>Name</td>
+                    <td>Status</td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">1</div>
+                    </td>
+                    <td>Nael</td>
+                    <td>
+                        <div class="list">
+                            Banned
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/padlock-ban.png" alt="" class="edit" onmouseover="hoverUnban(this)"
+                                        onmouseout="outHoverUnban(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">2</div>
+                    </td>
+                    <td>Tabudi</td>
+                    <td>
+                        <div class="list">
+                            Normal
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/padlock-unban.png" alt="" class="edit" onmouseover="hoverBan(this)"
+                                        onmouseout="outHoverBan(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">2</div>
+                    </td>
+                    <td>Norman</td>
+                    <td>
+                        <div class="list">
+                            Normal
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/padlock-unban.png" alt="" class="edit" onmouseover="hoverBan(this)"
+                                        onmouseout="outHoverBan(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="tables">
+                    <td>
+                        <div class="nomor">4</div>
+                    </td>
+                    <td>Dimas</td>
+                    <td>
+                        <div class="list">
+                            Banned
+                            <div class="list_action">
+                                <a href="">
+                                    <img src="../image/padlock-ban.png" alt="" class="edit" onmouseover="hoverUnban(this)"
+                                        onmouseout="outHoverUnban(this)">
+                                </a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
 
             </table>
             &nbsp;
         </div>
     </div>
-
-
-    
+    <script src="../js/admin-memberBE.js"></script>
 </body>
 
 </html>
